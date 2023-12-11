@@ -10,20 +10,26 @@ html{
   background: #fffaf5;
   background: radial-gradient(circle, rgba(255,183,160,1) 0%, rgba(255,250,245,1) 32%, rgba(255,250,245,1) 100%);
   background-attachment: fixed; /*edit*/
-  color: #387465;
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 }
 
-
+body{
+  
+  color: #387465;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
 
 a{
   text-decoration: none;
 }
+
 p{
   font-size: 25px;
 }
 
-.underline a{
+.underline{
   text-decoration: underline;
 }
 
@@ -60,11 +66,6 @@ a:hover{
   color:#68ac9a;
 }
 
-.logo{
-  display: left;
-  font-family: 'Poppins';font-size: 50px;
-}
-
 h2{
   font-size: 60px;
 }
@@ -73,34 +74,74 @@ h1{
   font-family: 'Lora';
   font-weight: 500;
 }
+
 h3{
   font-size: 40px;
 }
-#footer{
-  diplay: flex;
-  background-color: #91A49F;
+
+.navbar .logo{
+  align-self: left;
+  font-family:'Poppins';font-size: 50px;
+}
+
+.headshot{
+  margin: 30px;
+  width: 25%;
+  border-radius: 50% 50% 0 0; /* Adjust the values to control the roundness */
+  overflow: hidden;
+}
+
+.flex-container1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 600px;
+  width: 80%;
+  padding: 10px;
+  margin: 10px;
+}
+
+.hello-my-name-is{
+  text-align: left;
+  margin: 0;
 }
 
 .kiana {
   font-weight: 400;
   font-size: 140px;
-  display:flex;
-  flex-direction: right;
-}
-
-.flex-container1{
-  display: flex;
-  flex-direction: row;
+  text-align: right;
+  margin:0;
 }
 
 .flex-container2{
-  background-color: #ffff;
+  
   display: flex;
   flex-direction: column;
+  max-width: 80%;
+  position: relative;
+  justify-content: center;
+  margin: 1% 30px 5% 30px;
+  padding: 0 0 0 0;
 }
 
-.flex-item1 {
-  justify-content: right;
+.flex-container2 .flex-item1 {
+  max-width: 80%;
+  text-align: left;
+}
+
+.flex-container2 .flex-item2 {
+  max-width: 80%;
+  text-align: right;
+}
+
+.flex-container2 .flex-item3 {
+  max-width: 80%;
+  text-align: left;
+}
+
+.flex-container2 .flex-item4 {
+  max-width: 80%;
+  text-align: right;
 }
 
 .flex-container-drinks{
@@ -111,12 +152,99 @@ h3{
   align-items: left;
 }
 
+/* footer */
+#footer {
+  font-family: "Poppins";
+  display: flex;
+  flex-wrap: wrap; 
+  background-color: #91A49F;
+  padding: 3%;
+  justify-content: center; 
+}
+
+.footer-left{
+  align-items: left;
+  flex-direction: column;
+}
+
+.footer-right{
+  align-items: left;
+  justify-content: space-around;
+}
+
+.connect {
+  display: flex;
+  margin: 0;
+  flex-direction: column;
+  font-size: 40px;
+  flex-grow: 1;
+}
+
+.icons {
+  margin: 0;
+  align-self:flex-end ;
+  justify-content:left;
+  align-items: left;
+}
+
+.designed-coded {
+  color: #c4dbd5;
+  font-size: 15px;
+  align-self: flex-end;
+}
+
+.view-resume {
+  align-self: flex-end;
+}
+
+.view-resume a:hover{
+  color: #dcf7f0;
+  align-self: flex-end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .extralight {
   /* Montserrat Extra Light = 200 */
   font-weight: 200;
   font-family: Montserrat, "Open Sans", Helvetica, Arial, sans-serif;
 }
-
 
 .light {
   /* Montserrat Light = 300 */
