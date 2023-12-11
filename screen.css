@@ -38,21 +38,26 @@ p{
 .navbar{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar ul{
+.nav-elements{
+  display: flex;
+  flex-direction: row;
+} 
+
+nav ul{
   list-style: none;
   font-size: 30px;
 }
 
 .navbar li {
-  float: right;
+  justify-content: flex-end;
 }
 
-.navbar a {
-  display: block;
+nav a {
   padding: 20px;
-  
 }
 
 a:link {
@@ -81,7 +86,7 @@ h3{
   font-size: 40px;
 }
 
-.navbar .logo{
+.logo{
   align-self: left;
   font-family:'Poppins';font-size: 50px;
 }
@@ -155,12 +160,12 @@ h3{
 }
 
 /* footer */
-#footer {
+footer {
   font-family: "Poppins";
   display: flex;
   flex-wrap: wrap; 
   background-color: #91A49F;
-  padding:3px;
+  padding: 10px 40px 10px 40px;
   justify-content: space-between; 
   
 }
@@ -168,37 +173,32 @@ h3{
 .footer-left{
   background-color: #0000;
   flex-direction: column;
-}
-
-.footer-right{
   align-items: flex-end;
-  background-color: #ffff;
-  justify-content: space-around;
 }
-
 .connect {
   display: flex;
   margin: 0;
   flex-direction: column;
   font-size: 40px;
-  
 }
-
 .icons {
   margin: 0;
   align-items: flex-end;
 }
 
+.footer-right{
+  align-items: center;
+  background-color: #ffff;
+  justify-content: space-around;
+}
 .designed-coded {
   color: #c4dbd5;
   font-size: 15px;
   align-self: flex-end;
 }
-
 .view-resume {
   align-self: flex-end;
 }
-
 .view-resume a:hover{
   color: #dcf7f0;
   align-self: flex-end;
