@@ -160,18 +160,19 @@ h3{
   display: flex;
   flex-wrap: wrap; 
   background-color: #91A49F;
-  padding: 3%;
-  justify-content: center; 
+  padding:3px;
+  justify-content: space-between; 
   
 }
 
 .footer-left{
-  align-items: left;
+  background-color: #0000;
   flex-direction: column;
 }
 
 .footer-right{
-  align-items: left;
+  align-items: flex-end;
+  background-color: #ffff;
   justify-content: space-around;
 }
 
@@ -180,14 +181,12 @@ h3{
   margin: 0;
   flex-direction: column;
   font-size: 40px;
-  flex-grow: 1;
+  
 }
 
 .icons {
   margin: 0;
-  align-self:flex-end ;
-  justify-content:left;
-  align-items: left;
+  align-items: flex-end;
 }
 
 .designed-coded {
