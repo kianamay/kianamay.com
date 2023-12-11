@@ -14,11 +14,13 @@ html{
 }
 
 body{
-  
-  color: #387465;
   margin: 0;
-  justify-content: center;
+  color: #387465;
   align-items: center;
+}
+
+#content{
+  margin: 30px;
 }
 
 a{
@@ -114,10 +116,10 @@ h3{
 }
 
 .flex-container2{
-  
+  justify-self: center;
   display: flex;
   flex-direction: column;
-  max-width: 80%;
+  max-width: 90%;
   position: relative;
   justify-content: center;
   margin: 1% 30px 5% 30px;
@@ -125,22 +127,22 @@ h3{
 }
 
 .flex-container2 .flex-item1 {
-  max-width: 80%;
+  max-width: 85%;
   text-align: left;
 }
 
 .flex-container2 .flex-item2 {
-  max-width: 80%;
+  max-width: 85%;
   text-align: right;
 }
 
 .flex-container2 .flex-item3 {
-  max-width: 80%;
+  max-width: 85%;
   text-align: left;
 }
 
 .flex-container2 .flex-item4 {
-  max-width: 80%;
+  max-width: 85%;
   text-align: right;
 }
 
@@ -160,6 +162,7 @@ h3{
   background-color: #91A49F;
   padding: 3%;
   justify-content: center; 
+  
 }
 
 .footer-left{
