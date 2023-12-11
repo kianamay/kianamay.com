@@ -4,47 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Title</title>
+    <title>About</title>
     <link rel="stylesheet" href="screen.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900,1000" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500&display=swap" rel="stylesheet">    
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   </head>
   <body>
     <header>
-      <nav>
-        <ul class="navbar">
-          <div>
-            <li><a class = "logo" href="index.html">KIANA</a></li>
-          </div>
-          <div class="nav-elements">
+      <nav class="navbar">
+        <a class = "logo" href="index.html">KIANA</a>
+        <ul class="nav-elements">
             <li><a href="work.html">Work</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="play.html">Play</a></li>
             <li><a class ="view-resume" href="resume-unfinished.pdf" download="Kiana-May-Resume">Resume</a></li>
-          </div>
         </ul>
       </nav>
     </header>
-    <h1>About Me</h1>
-    <script src="about.js"></script>
-    <img src="images/cropped_headshot.jpeg" alt="photo of Kiana May" class = "headshot">
-    <p class="regular">I'm all about exploring my imaginative  side—doodling, baking, cooking, crafting and graphic design. Plus, I'm a bit of a coffee/ beverage mixologist, always experimenting with new beverage combos.</p>
-    <p class="regular">I'm all about creativity and having a blast, whether I'm making art or experimenting with flavors.</p>
-    <a href="play.html" class="underline">explore my playground</a>
-    <h2 class = "semibold">Interests:</h2>
-    <ul class="light">
-      <li><span class="medium">Gathering:</span> I have a vast trinket collection ranging from Sonny Angels and Squishmallows to anything I deem 'cute'.</li>
-      <li><span class="medium">All Things Ghibli:</span> Kiki's Delivery Service holds a special place in my heart, Totoro can be found lounging around my room</li>
-      <li><span class="medium">Food:</span> I am a foodie through ang through and am always excited to try new things!</li>
-    </ul>
-    <h3 class = "medium">Go-to Refreshments:</h3>
-    <div class="flex-container-drinks">
-      <ul class="light">
-        <li>Strawberry Matcha Latte</li>
-        <li>Passionfruit Green Tea with Lychee Jelly and Boba</li>
-        <li>Lime Lacroix</li>
-      </ul>
+    <div id="content">
+      <div class="about">
+        <div class="about-element about-element1">
+          <script src="about.js"></script>
+          <img src="images/headshot-cropped.jpeg" alt="photo of Kiana May" class = "headshot">
+        </div>
+        <div class="about-element about-element2">
+          <h1>About Me</h1>
+          <p class="regular">I'm all about exploring my imaginative  side—doodling, baking, cooking, crafting and graphic design. Plus, I'm a bit of a coffee/ beverage mixologist, always experimenting with new beverage combos.</p>
+          <p class="regular">I'm all about creativity and having a blast, whether I'm making art or experimenting with flavors.</p>
+          <a href="play.html" class="underline">explore my playground</a>
+        </div>
+        </div>
+      <div class="about-interests">
+        <h2 class = "semibold">Interests:</h2>
+          <ul class="light">
+            <li><span class="medium">Gathering:</span> I have a vast trinket collection ranging from Sonny Angels and Squishmallows to anything I deem 'cute'.</li>
+            <li><span class="medium">All Things Ghibli:</span> Kiki's Delivery Service holds a special place in my heart, Totoro can be found lounging around my room</li>
+            <li><span class="medium">Food:</span> I am a foodie through ang through and am always excited to try new things!</li>
+          </ul>
+      </div>
+      <div class="about-drinks">
+        <h3 class = "medium">Go-to Refreshments:</h3>
+        <div class="flex-container-drinks">
+          <ul class="light">
+            <li>Strawberry Matcha Latte</li>
+            <li>Passionfruit Green Tea with Lychee Jelly and Boba</li>
+            <li>Lime Lacroix</li>
+          </ul>
+        </div>
+      </div>
     </div>
+    <!-- footer section-->
+    <footer>
+      <div class="footer-left">
+        <div class="connect">
+          <p>Let's </p>
+          <p>Connect!</p>
+        </div>
+        <!-- social media icons -->
+        <div class="icons">
+            <a href="https://www.linkedin.com/in/kiana-may/"><img src="images/linkedinlogo.svg" alt="LinkedIn Page"></a>
+            <a href="mailto:kianamayy@gmail.com"><img src="images/Frame.svg" alt="Email Contact"></a>
+        </div>
+      </div>
+      <div class = "footer-right">
+          <p>view my <a class ="underline view-resume" href="resume-unfinished.pdf" download="Kiana-May-Resume">resume</a></p>
+          <p class="designed-coded">designed and coded with &hearts; by Kiana</p>
+      </div>
+    </footer>
   </body>
 </html>
